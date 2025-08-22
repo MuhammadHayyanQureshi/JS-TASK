@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="script.js"></script>
+
+</head>
+
+<style>
+    *{
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    label{
+        padding: 1rem;
+        font-size: larger;
+        margin: 0 1rem;
+    }
+    input{
+        background-color: gray;
+    }
+    button{
+        margin: 1rem;
+    }
+</style>
+<body>
+    
+    <div class="container">
+    <label>Hours</label>
+    <input type="number" name="" id="hourInput">
+    
+<!--      
+    <label>Current Date</label>
+    <input type="Date" name="" id="cDate"> -->
+    
+   <button onclick="convertHoursToSeconds()">Convert</button>
+    <p id="result"></p>
+    </div>
+
+
+</body>
+</html>
