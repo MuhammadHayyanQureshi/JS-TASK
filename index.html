@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="script.js"></script>
+
+</head>
+
+<style>
+    *{
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    label{
+        padding: 1rem;
+        font-size: larger;
+        margin: 0 1rem;
+    }
+    input{
+        background-color: gray;
+    }
+    button{
+        margin: 1rem;
+    }
+</style>
+<body>
+    
+    <section>
+ <div class="container">
+    <label>Age</label>
+    <input type="number" name="" id="ageinput">
+    
+
+   <button onclick="convertAgeToDays()">Convert</button>
+    <p id="ageResult"></p>
+    </div>
+    <hr>
+    </section>
+
+<section>
+  <div class="container">
+    <label>Height</label>
+    <input type="number" name="" id="heightInput">
+    </div>
+
+     <div class="container">
+    <label>Weight</label>
+    <input type="number" name="" id="poundInput">
+
+   <button onclick="calBMI()">Calculate Your BMI</button>
+    <p id="bmiResult"></p>
+
+    </div>
+        <hr>
+
+</section>
+  
+
+ <section>
+    <div class="container">
+
+  <h2>Enter your name</h2>
+
+  <input type="text" id="nameInput">
+
+  <button id="" onclick="capitalizeString()">Capitalize</button>
+  
+  <div id="strResult"></div>
+  
+    </div>
+
+    <hr>
+ </section>
+
+
+<section>
+<div class="container">
+
+  <h2>Array Of Number</h2>
+  <h3>1 to 5</h3>
+
+    <input type="text" id="userInput">
+
+    <button onclick="findNum()">Find</button>
+
+        <p id="fndResult"></p>
+
+    </div>
+    <hr>
+</section>
+     
+
+<section>
+ <div class="container">
+    <label>Hours</label>
+    <input type="number" name="" id="hourInput">
+    
+<!--      
+    <label>Current Date</label>
+    <input type="Date" name="" id="cDate"> -->
+    
+   <button onclick="convertHoursToSeconds()">Convert</button>
+    <p id="hourResult"></p>
+    </div>
+    <hr>
+</section>
+   
+<section>
+    
+    <div class="container">
+
+          <h1>Random Array</h1>
+    <button onclick="generateArray()">Generate</button>
+    <div id="arrayOutput"></div>
+
+        <button onclick="SelectFunc()">Select 1st and last in the next array.</button>
+            <div id="selectResult"></div>
+
+    </div>
+<hr>
+</section>
+
+</body>
+</html>
