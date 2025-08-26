@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="script.js"></script>
+
+</head>
+
+<style>
+    *{
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h3{
+        margin: 1rem;
+    }
+    label{
+        padding: 1rem;
+        font-size: larger;
+        margin: 0 1rem;
+    }
+    input{
+        background-color: gray;
+    }
+    button{
+        background-color: white;
+        margin: 1rem;
+        padding: 0 1rem;
+        color: black;
+    }
+</style>
+<body>
+    
+    <div class="container">
+
+  <h2>Enter your name</h2>
+
+  <input type="text" id="nameInput">
+
+  <button id="" onclick="capitalizeString()">Capitalize</button>
+  
+  <div id="result"></div>
+  
+    </div>
+
+</body>
+</html>
