@@ -71,11 +71,15 @@
  <section>
     <div class="container">
 
-  <h2>Enter your name</h2>
+        <div class="nameform">
+            
+       <h2>Enter your name</h2>
+        <input type="text" id="nameInput" placeholder="First, Middle, Last" required>
 
-  <input type="text" id="nameInput">
+          <button id="" onclick="capitalizeString()">Capitalize</button>
 
-  <button id="" onclick="capitalizeString()">Capitalize</button>
+        </div>
+
   
   <div id="strResult"></div>
   
@@ -86,18 +90,18 @@
 
 
 <section>
-<div class="container">
+   <div class="container">
 
-  <h2>Array Of Number</h2>
-  <h3>1 to 5</h3>
+  <h2>Enter to find the next Number.</h2>
 
     <input type="text" id="userInput">
 
     <button onclick="findNum()">Find</button>
 
-        <p id="fndResult"></p>
+        <p id="numResult"></p>
 
     </div>
+
     <hr>
 </section>
      
@@ -127,6 +131,23 @@
 
         <button onclick="SelectFunc()">Select 1st and last in the next array.</button>
             <div id="selectResult"></div>
+
+    </div>
+<hr>
+</section>
+
+<section>
+    
+    <div class="container">
+
+          <label for="">Enter first number</label>
+          <input type="text" id="ftInput">
+
+                 <label for="">Enter Second Number.</label>
+          <input type="text" id="scInput">
+
+                 <label for="">Result</label>
+          <input type="text" id="resultBox" readonly>
 
     </div>
 <hr>
