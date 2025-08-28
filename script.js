@@ -42,14 +42,17 @@ function capitalizeString(){
                 document.getElementById('strResult').innerHTML = capitalizedNames.join(' ');
 }
 
-const numbersArray = [1, 2, 2.5 ,3 ,4 ,4.5 ,5 ,5.5];
+const numbersArray = [1, 2, 3, 4, 5 ,6 ,7 ,8 ,9 ,10];
 
 
 function findNum(){
     const input = document.getElementById('userInput').value;
     let number = parseFloat(input);
+        const index = numbersArray.indexOf(number);
+
+
     if(Number.isInteger(number)){
-        number += 1;
+        number = index !== -1 && index < numbersArray.length - 1 ? numbersArray[index + 1] : null;
     } else {
         number += 0.1;
     }
